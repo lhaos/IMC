@@ -103,6 +103,15 @@ input:focus + .hidden{
   text-align: center;
 }
 
+.result p{
+	margin-left:40%;
+	float:none !important;
+}
+
+td{
+	text-align:center;
+}
+
 footer{
   border-color: #D8BFD8;
   font-size: 0.8em;

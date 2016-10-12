@@ -1,3 +1,7 @@
+<?php
+		session_start();
+	
+?>
 <html>
 
 		<head>
@@ -37,15 +41,14 @@
 					<p>
 						<label>Gênero:</label>
 						<select name="genero">
-							<option value="" selected> </option>
-							<option value="masculino">MASCULINO</option>
+							<option value="masculino" selected>MASCULINO</option>
 							<option value="feminino" >FEMININO</option>
 						</select>
 					</p>
 					<p>
 						<label>Peso:</label>
 						<input type="text" name="peso" required>
-						<span class="hidden">Exemplo: 69 (somento o número)</span>
+						<span class="hidden">Exemplo: 69 (somente o número)</span>
 					</p>
 					<p>
 						<label>Altura:</label>
@@ -126,7 +129,15 @@
 				</table>
 			</aside>
 			<div class="result">
-				<?php echo '<span>Aqui vem o resultado, arruma aqui lucas :v</span>';?>
+				<?php 
+					if(isset($_SESSION['nome'])){
+					echo	'<p>'.$_SESSION['nome']. ' indivíduo '.$_SESSION['gen']. ' nascido em '.$_SESSION['date_nasc']
+							.'<br>'. 'Seu imc é: '.$_SESSION['calc_imc'].' e você está com '. $_SESSION['informaCategoria']
+							.'<br>'. 'Resultado obtido a partir do peso '.$_SESSION['peso'].' e da altura '.$_SESSION['altura'].'</p>';
+					
+					session_destroy();
+					}
+				?>
 			</div>
 		</section>
 		<footer>&#174Copyright Thiago Siqueira e Lucas Guasselli</footer>
