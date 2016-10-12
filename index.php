@@ -8,9 +8,7 @@
 		</head>
 
 		<body>
-
 			<header>  Calcule seu IMC </header>
-
 			<section>
 				<p>
 					Para saber com certeza o quanto você está acima do peso ideal,
@@ -24,26 +22,44 @@
 					Preencha agora os campos a seguir com seus dados e confira seu
 					peso ideal.
 				</p>
-
 			<article>
 				<form  class=""  method="post" action="control/control-imc.php">
+					<p>
 						<label>	Nome: </label>
-						<input type="text" name="nome" autofocus required>
+						<input type="text" name="nome" required>
+						<span class="hidden">Exemplo: João</span>
+					</p>
+					<p>
 						<label>	Data de nascimento:</label>
 						<input type="text" name="datanasc" required>
-						<label>Gênero</label>
+						<span class="hidden">Exemplo: 01/01/2016</span>
+					</p>
+					<p>
+						<label>Gênero:</label>
 						<select name="genero">
 							<option value="" selected> </option>
 							<option value="masculino">MASCULINO</option>
 							<option value="feminino" >FEMININO</option>
 						</select>
-						<label>Peso</label>
+					</p>
+					<p>
+						<label>Peso:</label>
 						<input type="text" name="peso" required>
+						<span class="hidden">Exemplo: 69 (somento o número)</span>
+					</p>
+					<p>
 						<label>Altura:</label>
 						<input type="text" name="altura" required>
-						<input type="submit" name="calcular" value="Calcular">
-						<input type="reset" name="limpar" value="Limpar">
+						<span class="hidden">Exemplo: 1.80</span>
+					</p>
+					<div class="void">
+						<p>
+							<input type="submit" name="calcular" value="Calcular" class="button">
+							<input type="reset" name="limpar" value="Limpar" class="button">
+						</p>
+					</div>
 					</form>
+			</article>
 			<aside>
 				<table border = "5">
 					<tr>
@@ -109,16 +125,10 @@
 					</tr>
 				</table>
 			</aside>
-
-			</article>
-
+			<div class="result">
+				<?php echo '<span>Aqui vem o resultado, arruma aqui lucas :v</span>';?>
+			</div>
 		</section>
-
-
-
-
-
-		<!-- section , articol , aside ,   -->
-
-		</body>
+		<footer>&#174Copyright Thiago Siqueira e Lucas Guasselli</footer>
+	</body>
 </html>

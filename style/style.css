@@ -1,5 +1,4 @@
 body{
-  text-align: center;
   background-image: linear-gradient(to bottom right, #E6E6FA, #BA55D3);
 }
 
@@ -13,8 +12,99 @@ section{
   font-size: 14px;
   text-align: center;
   padding: 2px;
+  width: 100%;
+  float: left;
+  height: 85%;
+}
+
+article{
+  margin-top: 30px;
+  width: 50%;
+  padding: 2px;
+  float: left;
+  height: 52%;
+}
+
+aside{
+  margin-top: 30px;
+  width: 48%;
+  padding: 2px;
+  float: right;
+  height: 52%;
 }
 
 p{
   text-align: justify;
+  clear: both;
+}
+
+label{
+  float: left;
+  margin-top: 4px;
+  display: inline-block;
+  width: 130px;
+  margin-left: 190px;
+  font-size: 1.1em;
+}
+
+input{
+  float: left;
+  display: inline-block;
+  width: 120px;
+  margin-top: 5px;
+  height: 20px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25) inset;
+}
+
+select{
+  float: left;
+  display: inline-block;
+  width: 120px;
+  margin-top: 5px;
+}
+
+.void{
+  padding: 2px;
+  width: 450px;
+  text-align: right;
+}
+
+.button{
+  float: right;
+  display: inline-block;
+  width: 70px;
+  height: 20px;
+  border-radius: 5px;
+  box-shadow: none;
+  background-color: #fff;
+  border: solid #87CEFA 1px;
+  margin-top: 13px;
+  margin-right: 2px;
+}
+
+.hidden{
+  display: none;
+}
+
+input:focus + .hidden{
+  display: inline-block;
+  margin-left: 20px;
+  background-color: #fffbe4;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+  font-size: 0.8em;
+  padding: 3px;
+  margin-top: 4.3px;
+}
+
+.result{
+  width: 100%;
+  padding: 2px;
+  text-align: center;
+}
+
+footer{
+  border-color: #D8BFD8;
+  font-size: 0.8em;
+  text-align: center;
 }
