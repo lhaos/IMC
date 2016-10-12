@@ -4,7 +4,7 @@
 		private $gen;
 		private $date_nasc;
 		private $peso;
-		private $alt;
+		private $alt; 
 
 		public function __construct(){}
 
@@ -45,6 +45,6 @@
 			$result = number_format($calc, 1, ',', ' ');
 			return $result;
 		}
-		
+
 
 	}//close class

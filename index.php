@@ -1,106 +1,55 @@
 <html>
-			
+
 		<head>
 				<title>APS 2 </title>
 				<meta charset = "utf-8">
-				<link rel="stylesheet" type="text/css" href="estilo.css">
-								
+				<link rel="stylesheet" type="text/css" href="style/style.css">
+
 		</head>
-		
+
 		<body>
-			
+
 			<header>  Calcule seu IMC </header>
-			
+
 			<section>
 				<p>
-					Para saber com certeza o quanto você está acima do peso ideal, 
+					Para saber com certeza o quanto você está acima do peso ideal,
 					é preciso calcular o seu Índice de Massa Corporal. Descubra agora,
-					sem complicação, o quanto você tem a perder.
-				</p>
-				<p>
-					O Índice de Massa Corporal (IMC) é o padrão pelo qual você pode ver se 
-					seus níveis de gordura e peso estão dentro do recomendado pela 
-					Organização Mundial de Saúde.
-				</p>
-				<p>
-					A fórmula é simples: chega-se ao resultado dividindo o peso da 
-					pessoa em quilos pela altura em centímetros, elevada ao quadrado.
-				</p>
-				<p>
-					Preencha agora os campos a seguir com seus dados e confira seu 
+					sem complicação, o quanto você tem a perder.<br>
+					O Índice de Massa Corporal (IMC) é o padrão pelo qual você pode ver se
+					seus níveis de gordura e peso estão dentro do recomendado pela
+					Organização Mundial de Saúde.<br>
+					A fórmula é simples: chega-se ao resultado dividindo o peso da
+					pessoa em quilos pela altura em centímetros, elevada ao quadrado.<br>
+					Preencha agora os campos a seguir com seus dados e confira seu
 					peso ideal.
 				</p>
-			
+
 			<article>
-		<form  class=""  method="post" action="control/control-imc.php">	
-			<table>
-				<tr>
-					<td>
-						<label>
-							Nome: 
-						</label>
-					</td>
-					<td>
+				<form  class=""  method="post" action="control/control-imc.php">
+						<label>	Nome: </label>
 						<input type="text" name="nome" autofocus required>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label>
-							Data de nascimento: 
-						</label>
-					</td>
-					<td>
+						<label>	Data de nascimento:</label>
 						<input type="text" name="datanasc" required>
-					</td>
-				</tr>	
-				<tr>
-					<td>
-						<label>
-							Gênero
-						</label>
-					</td>
-					<td>
+						<label>Gênero</label>
 						<select name="genero">
 							<option value="" selected> </option>
-							<option value="masculino">MASCULINO</option> 
-							<option value="feminino" >FEMININO</option>				
+							<option value="masculino">MASCULINO</option>
+							<option value="feminino" >FEMININO</option>
 						</select>
-					</td>
-				</tr>
-				<tr>	
-					<td>
-						<label>
-							Peso 
-						</label>
-					</td>
-					
-					<td>
+						<label>Peso</label>
 						<input type="text" name="peso" required>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label>
-							Altura: 
-						</label>
-					</td>
-					<td>
+						<label>Altura:</label>
 						<input type="text" name="altura" required>
-					</td>
-				</tr>
-				
-			</table>
-			
-			<input type="submit" name="calcular" value="Calcular">
-			<input type="reset" name="limpar" value="Limpar">
-		</form>	
+						<input type="submit" name="calcular" value="Calcular">
+						<input type="reset" name="limpar" value="Limpar">
+					</form>
 			<aside>
 				<table border = "5">
 					<tr>
 						<td>
 								Categoria
-						</td>					
+						</td>
 						<td>
 								IMC
 						</td>
@@ -160,16 +109,16 @@
 					</tr>
 				</table>
 			</aside>
-			
+
 			</article>
-			
-		</section>	 
-			
-			
-			
-		
-		
+
+		</section>
+
+
+
+
+
 		<!-- section , articol , aside ,   -->
-		
+
 		</body>
 </html>

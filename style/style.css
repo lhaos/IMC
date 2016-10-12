@@ -1,0 +1,20 @@
+body{
+  text-align: center;
+  background-image: linear-gradient(to bottom right, #E6E6FA, #BA55D3);
+}
+
+header{
+  text-align: center;
+  font-size: 3.2em;
+  color: #6A5ACD
+}
+
+section{
+  font-size: 14px;
+  text-align: center;
+  padding: 2px;
+}
+
+p{
+  text-align: justify;
+}
